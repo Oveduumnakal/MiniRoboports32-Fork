@@ -5,7 +5,7 @@ data:extend
       type = "technology",
       name = "roboport-mini",
       icon = "__base__/graphics/technology/logistic-robotics.png",
-      icon_size = 128,
+      icon_size = 256,
       effects =
       {
         {

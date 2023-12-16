@@ -54,7 +54,7 @@ data:extend(
       -- per one charge slot
       charging_energy = "1000kW",
       logistics_radius = 16,
-      construction_radius = 32,
+      construction_radius = 34,
       charge_approach_distance = 5,
       robot_slots_count = 2,
       material_slots_count = 2,
@@ -104,7 +104,7 @@ data:extend(
       },
       base_patch =
       {
-        filename = "__MiniRoboports__/graphics/roboport-base-patch.png",
+        filename = "__MiniRoboports32__/graphics/roboport-base-patch.png",
         priority = "medium",
         width = 79,
         height = 61,
@@ -113,7 +113,7 @@ data:extend(
         scale = 0.5,
         hr_version =
         {
-          filename = "__MiniRoboports__/graphics/hr-roboport-base-patch.png",
+          filename = "__MiniRoboports32__/graphics/hr-roboport-base-patch.png",
           priority = "medium",
           width = 153,
           height = 123,

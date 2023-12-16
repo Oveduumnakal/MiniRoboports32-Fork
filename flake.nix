@@ -15,26 +15,23 @@
 
       packages = {
         default = pkgs.stdenv.mkDerivation rec {
-          name = "mini-roboports-32";
+          name = "MiniRoboports32";
           src = ./src;
           version = "1.0.0";
+        
 
           buildInputs = [ pkgs.zip ];
 
           buildPhase = ''
-            zip -r MiniRoboports32_${version}.zip \
-            	thumbnail.png \
-            	data.lua \
-            	info.json \
-            	locale \
-            	graphics \
-            	prototypes \
-            	-x '*.xcf'
+            mkdir ${name}
+            shopt -s extglob
+            mv -- !(${name}) ${name}
+            zip -r ${name}_${version}.zip ./${name} -x '*.xcf'
           '';
 
           installPhase = ''
             mkdir -p $out
-            cp MiniRoboports32_${version}.zip $out
+            cp ${name}_${version}.zip $out
           '';
 
         };

@@ -3,7 +3,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 
 -- 3.3 pixel shift for std size
 
-circuit_connector = circuit_connector_definitions.create
+circuit_connector = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {
@@ -68,121 +68,75 @@ data:extend(
         layers =
         {
           {
+            
             filename = "__base__/graphics/entity/roboport/roboport-base.png",
-            width = 143,
-            height = 135,
-            shift = util.by_pixel(8.7, 4.5),
-            scale = 0.5,
-            hr_version =
-            {
-              filename = "__base__/graphics/entity/roboport/hr-roboport-base.png",
-              width = 228,
-              height = 277,
-              shift = util.by_pixel(1.5, 3.33),
-              scale = 0.25
-            }
+            width = 228,
+            height = 277,
+            shift = util.by_pixel(1.5, 3.33),
+            scale = 0.25
+            
           },
           {
+            
             filename = "__base__/graphics/entity/roboport/roboport-shadow.png",
-            width = 147,
-            height = 101,
+            width = 294,
+            height = 201,
             draw_as_shadow = true,
-            shift = util.by_pixel(30, 30),
-            scale = 0.5,
-            hr_version =
-            {
-              filename = "__base__/graphics/entity/roboport/hr-roboport-shadow.png",
-              width = 294,
-              height = 201,
-              draw_as_shadow = true,
-              force_hr_shadow = true,
-              shift = util.by_pixel(13.8, 8.4),
-              scale = 0.25
-            }
+            force_hr_shadow = true,
+            shift = util.by_pixel(13.8, 8.4),
+            scale = 0.25
+            
           }
         }
       },
       base_patch =
       {
-        filename = "__MiniRoboports32__/graphics/roboport-base-patch.png",
+        
+        filename = "__MiniRoboports__/graphics/roboport-base-patch.png",
         priority = "medium",
-        width = 79,
-        height = 61,
+        width = 153,
+        height = 123,
         frame_count = 1,
-        shift = util.by_pixel(2.7, 4.5),
-        scale = 0.5,
-        hr_version =
-        {
-          filename = "__MiniRoboports32__/graphics/hr-roboport-base-patch.png",
-          priority = "medium",
-          width = 153,
-          height = 123,
-          frame_count = 1,
-          shift = util.by_pixel(0.61, 3.3),
-          scale = 0.25
-        }
+        shift = util.by_pixel(0.61, 3.3),
+        scale = 0.25
+        
       },
       base_animation =
       {
+        
         filename = "__base__/graphics/entity/roboport/roboport-base-animation.png",
         priority = "medium",
-        width = 42,
-        height = 31,
+        width = 83,
+        height = 59,
         frame_count = 8,
         animation_speed = 0.5,
-        shift = util.by_pixel(-8.4, -33),
-        scale = 0.5,
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/roboport/hr-roboport-base-animation.png",
-          priority = "medium",
-          width = 83,
-          height = 59,
-          frame_count = 8,
-          animation_speed = 0.5,
-          shift = util.by_pixel(-8.10, -28.2),
-          scale = 0.25
-        }
+        shift = util.by_pixel(-8.10, -28.2),
+        scale = 0.25
+        
       },
       door_animation_up =
       {
+        
         filename = "__base__/graphics/entity/roboport/roboport-door-up.png",
         priority = "medium",
-        width = 52,
-        height = 20,
+        width = 97,
+        height = 38,
         frame_count = 16,
-        shift = util.by_pixel(1.5, -13.7),
-        scale = 0.5,
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/roboport/hr-roboport-door-up.png",
-          priority = "medium",
-          width = 97,
-          height = 38,
-          frame_count = 16,
-          shift = util.by_pixel(0.6, -15.3),
-          scale = 0.25
-        }
+        shift = util.by_pixel(0.6, -15.3),
+        scale = 0.25
+        
       },
       door_animation_down =
       {
+        
         filename = "__base__/graphics/entity/roboport/roboport-door-down.png",
         priority = "medium",
-        width = 52,
-        height = 22,
+        width = 97,
+        height = 41,
         frame_count = 16,
-        shift = util.by_pixel(1.5, -4.2),
-        scale = 0.5,
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/roboport/hr-roboport-door-down.png",
-          priority = "medium",
-          width = 97,
-          height = 41,
-          frame_count = 16,
-          shift = util.by_pixel(0.6, -5.8),
-          scale = 0.25
-        }
+        shift = util.by_pixel(0.6, -5.8),
+        scale = 0.25
+        
       },
       recharging_animation =
       {

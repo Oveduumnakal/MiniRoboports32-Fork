@@ -1,9 +1,13 @@
 {
-  "name": "MiniRoboports32",
+  "name": "MiniRoboports",
   "version": "1.0.0",
-  "title": "Mini Roboports 32",
-  "author": "JustRyan",
+  "title": "Mini Roboports",
+  "author": "Oveduumnakal",
   "description": " Adds a 2x2 Roboport with a 32x32 logistics area and 68x68 construction area, perfect for grid aligned blueprints.",
-  "factorio_version": "1.1",
-  "dependencies": ["base >= 1.1"]
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.0",
+    "? quality",
+    "? space-age"
+  ]
 }

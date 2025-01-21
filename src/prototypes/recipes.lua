@@ -6,13 +6,16 @@ data:extend
       name = "roboport-mini",
       enabled = false,
       energy_required = 5,
+      allow_quality = true,
       ingredients =
       {
-        {"steel-plate", 35},
-        {"iron-gear-wheel", 35},
-        {"advanced-circuit", 35}
+        {type="item", name="steel-plate", amount=35},
+        {type="item", name="iron-gear-wheel", amount=35},
+        {type="item", name="advanced-circuit", amount=35}
       },
-      result = "roboport-mini"
-    },
+      results = {
+        { type="item", name="roboport-mini", amount=1 }
+      }
+    }
   }
 )

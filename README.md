@@ -10,3 +10,4 @@ result/MiniRoboports32_1.0.0.zip
 ### Credit
 
 Credit goes to [dahhakd](https://mods.factorio.com/user/dahhakd) for creating the [original mod](https://mods.factorio.com/mod/MiniRoboports).
+Credit goes to [davidrios](https://github.com/davidrios/MiniRoboports) for creating the mod this is forked from

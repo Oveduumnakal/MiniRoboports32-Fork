@@ -1,7 +1,7 @@
-Remove-Item "MiniRoboports*zip"
-Copy-Item -path ".\src" -Destination ".\MiniRoboports" -Recurse 
+Remove-Item "CompactRoboports*zip"
+Copy-Item -path ".\src" -Destination ".\CompactRoboports" -Recurse 
 
-$json = Get-Content 'MiniRoboports/info.json' | Out-String | ConvertFrom-Json
-Compress-Archive -Path 'MiniRoboports/' -DestinationPath "MiniRoboports_$($json.version).zip"
+$json = Get-Content 'CompactRoboports/info.json' | Out-String | ConvertFrom-Json
+Compress-Archive -Path 'CompactRoboports/' -DestinationPath "CompactRoboports$($json.version).zip"
 
-Remove-Item -LiteralPath "MiniRoboports" -Force -Recurse
+Remove-Item -LiteralPath "CompactRoboports" -Force -Recurse

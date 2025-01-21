@@ -92,7 +92,7 @@ data:extend(
       base_patch =
       {
         
-        filename = "__MiniRoboports__/graphics/roboport-base-patch.png",
+        filename = "__CompactRoboports__/graphics/roboport-base-patch.png",
         priority = "medium",
         width = 153,
         height = 123,
